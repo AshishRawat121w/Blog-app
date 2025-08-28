@@ -43,7 +43,7 @@ const App = () => {
               {isModalOpen && (
                 <Modal onClose={() => setModalOpen(false)}>
                   <BlogForm
-                    existingBlog={editingBlog}
+                    existingBlog={editingBlog ?? undefined}
                     onClose={() => setModalOpen(false)}
                   />
                 </Modal>
